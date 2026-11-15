@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mawaddah Asiri</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bubbles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <header>
+    <nav>
+      <a href="index.html" class="logo">Mawaddah</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cv.html">CV</a></li>
+        <li><a href="labs.html">Labs &amp; Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <h1>Let's <span class="squiggle">Talk</span></h1>
+      <p>Have a question or just want to say hi? Send me a message!</p>
+    </section>
+
+    <div class="contact-layout">
+
+      <section class="card">
+        <h2><span class="icon bg-teal">📇</span> Reach Me</h2>
+        <ul class="contact-list">
+          <li>
+            <span class="icon bg-coral">✉️</span>
+            <div>
+              <span class="label">University email</span>
+              <a href="mailto:masiri0240@stu.kau.edu.sa">masiri0240@stu.kau.edu.sa</a>
+            </div>
+          </li>
+          <li>
+            <span class="icon bg-purple">🐙</span>
+            <div>
+              <span class="label">GitHub</span>
+              <a href="https://github.com/MawaddahAsiri0240" target="_blank">github.com/MawaddahAsiri0240</a>
+            </div>
+          </li>
+          <li>
+            <span class="icon bg-sky">💼</span>
+            <div>
+              <span class="label">LinkedIn</span>
+              <a href="https://www.linkedin.com/in/mawaddah-asiri-14bb13323" target="_blank">linkedin.com/in/mawaddah-asiri-14bb13323</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2><span class="icon bg-pink">💌</span> Send a Message</h2>
+        <!-- Web3Forms: get a free access key at https://web3forms.com
+             and paste it into the access_key value below. -->
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_ACCESS_KEY">
+          <input type="hidden" name="subject" value="New message from my portfolio">
+          <input type="checkbox" name="botcheck" class="hidden-field">
+
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required>
+          </div>
+
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+          </div>
+
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn">Send message ✨</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Mawaddah Asiri · 2306042 · CPIT-405 Internet Applications</p>
+  </footer>
+
+</body>
+</html>

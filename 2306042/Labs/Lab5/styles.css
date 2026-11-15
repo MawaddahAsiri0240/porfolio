@@ -1,0 +1,137 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+#dark-mode-toggle {
+    cursor: pointer;
+}
+
+/* Search and filter */
+.table-filters {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 24px;
+}
+
+#search {
+    box-sizing: border-box;
+    width: 179px;
+    padding: 4px;
+}
+
+#team-filter {
+    width: 80px;
+    padding: 3px;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+    font-size: 20px;
+}
+
+th {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Mouse hover */
+tbody tr:hover,
+tbody tr.highlight {
+    background-color: #e5e5e5;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode table {
+    color: #f4f4f4;
+}
+
+body.dark-mode th,
+body.dark-mode td {
+    border-color: #555;
+}
+
+body.dark-mode tbody tr:hover,
+body.dark-mode tbody tr.highlight {
+    background-color: #555;
+}
+
+body.dark-mode input,
+body.dark-mode select {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+body.dark-mode button {
+    background-color: #555;
+    color: #fff;
+    border: 1px solid #777;
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+
+    .container {
+        width: 94%;
+    }
+
+    header {
+        align-items: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+        margin-bottom: 32px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    #search {
+        width: 170px;
+    }
+}

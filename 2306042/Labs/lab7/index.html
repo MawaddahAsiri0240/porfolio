@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unsplash Photo Search</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Unsplash Photo Search</h1>
+
+
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="inputBox"
+                placeholder="Enter a search keyword..."
+            >
+
+            <button onclick="searchUsingXHR()">
+                Search using XHR
+            </button>
+
+            <button onclick="searchUsingFetch()">
+                Search using Fetch
+            </button>
+
+            <button onclick="searchUsingFetchAwaitAsync()">
+                Search using Async/Await
+            </button>
+
+        </div>
+
+        <h2 id="title"></h2>
+
+        <div id="sampleOutput" class="image-container"></div>
+
+    </div>
+
+</body>
+</html>

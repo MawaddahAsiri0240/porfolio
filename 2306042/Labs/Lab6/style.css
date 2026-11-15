@@ -1,0 +1,120 @@
+
+body {
+    font-family: Georgia, serif;
+    text-align: center;
+    margin: 0;
+    background-color: white;
+}
+
+h1 {
+    font-size: 56px;
+    margin-top: 20px;
+    margin-bottom: 28px;
+    color: #333;
+}
+
+h2 {
+    font-size: 40px;
+    margin-top: 0;
+    margin-bottom: 45px;
+    color: #333;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+
+.buttons button {
+    width: 276px;
+    height: 97px;
+    background-color: #e5e5e9;
+    border: 1px solid #9999a8;
+    border-radius: 7px;
+    font-size: 64px;
+    color: black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.buttons button:hover {
+    background-color: #d8d8dd;
+}
+
+h3 {
+    font-size: 32px;
+    margin-top: 38px;
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 75%;
+    height: 180px;
+    padding: 16px;
+    font-size: 24px;
+    font-family: monospace;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    resize: both;
+    box-sizing: content-box;
+}
+
+textarea::placeholder {
+    color: #777;
+}
+
+.comment-buttons {
+    margin-top: 20px;
+}
+
+.comment-buttons button {
+    width: 147px;
+    height: 65px;
+    margin: 0 9px;
+    background-color: #484848;
+    color: white;
+    border: none;
+    border-radius: 9px;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.comment-buttons button:hover {
+    background-color: #333;
+}
+
+#comments-list {
+    width: 78%;
+    margin: 20px auto;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+#comments-list p {
+    padding: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 650px) {
+    h1 {
+        font-size: 44px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    .buttons button {
+        width: 42%;
+        height: 75px;
+        font-size: 42px;
+    }
+
+    textarea {
+        width: 80%;
+        box-sizing: border-box;
+    }
+}

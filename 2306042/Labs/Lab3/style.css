@@ -1,0 +1,26 @@
+.image-preview img {
+    border-top: 20px solid rgb(133, 206, 237);
+    border-right: 20px solid rgb(255, 181, 192);
+    border-bottom: 20px solid rgb(142, 240, 139);
+    border-left: 20px solid rgb(255, 238, 212);
+}
+
+p > span {
+    color: red;
+}
+
+#header span {
+    color: pink;
+}
+
+span {
+    color: green;
+}
+
+#header *:last-child {
+    color: orange;
+}
+
+#header span:first-child:hover {
+    color: blue;
+}
